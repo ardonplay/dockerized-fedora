@@ -1,0 +1,8 @@
+services:
+  dockerized-fedora:
+    image: ardonplay/dockerized-fedora:latest
+    container_name: dockerized-fedora
+    build:
+      context: .
+    ports:
+      - "2222:22"
